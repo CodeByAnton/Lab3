@@ -1,8 +1,8 @@
-package object;
+package objects;
 
-public class Objects {
+public abstract class AbstractObject {
     private String name;
-    public Objects(String name) {
+    public AbstractObject(String name) {
         this.name = name;
     }
     public String getName() {
@@ -15,14 +15,14 @@ public class Objects {
     }
     @Override
     public int hashCode(){
-        return getName().hashCode()+1010101;
+        return getName().hashCode()+1;
     }
     @Override
     public boolean equals(Object o) {
         if (this == o) { return true; }
         if (o == null || o.getClass() != getClass()) { return false; }
 
-        Objects x = (Objects) o;
+        AbstractObject x = (AbstractObject) o;
 
         return x.getName() == this.getName();
     }

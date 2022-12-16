@@ -1,5 +1,5 @@
 package entities;
-public class FirstSquad extends Entity {
+public class FirstSquad extends AbstractEntity {
     public FirstSquad(String name){
         super(name);
     }

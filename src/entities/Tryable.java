@@ -1,6 +1,6 @@
 package entities;
 
-import object.Baloon;
+import objects.Baloon;
 
 public interface Tryable {
     void trying(Baloon baloon);

@@ -1,7 +1,7 @@
 package entities;
-import object.Baloon;
-import object.Bush;
-public class Knowitall extends Entity implements Orderedable {
+import objects.Baloon;
+import objects.Bush;
+public class Knowitall extends AbstractEntity implements Orderedable {
     public Knowitall(String name){
         super(name);
     }
@@ -14,7 +14,7 @@ public class Knowitall extends Entity implements Orderedable {
         System.out.println(getName()+" поделил "+persons+" на два отряда");
     }
     @Override
-    public void order(Entity name, Item item){
+    public void order(AbstractEntity name, Item item){
         switch (item){
             case COCOONS:
                 System.out.println(getName()+" велел "+name.getName()+" собрать шелковинчные коконы");

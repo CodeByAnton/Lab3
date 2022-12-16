@@ -1,9 +1,9 @@
 package entities;
 
-import object.Baloon;
-import object.Bush;
+import objects.Baloon;
+import objects.Bush;
 
-public class Residents extends Entity implements Comeable, Watchable, Wantable, Tryable {
+public class Residents extends AbstractEntity implements Comeable, Watchable, Wantable, Tryable {
     public Residents(String name){
         super(name);
     }

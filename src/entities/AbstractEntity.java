@@ -1,14 +1,14 @@
 package entities;
 
 
-public abstract class Entity {
+public abstract class AbstractEntity {
     private String name;
 
     public String getName() {
         return name;
     }
 
-    public Entity(String name) {
+    public AbstractEntity(String name) {
         this.name = name;
     }
 
@@ -33,7 +33,7 @@ public abstract class Entity {
             return false;
         }
 
-        Entity x = (Entity) o;
+        AbstractEntity x = (AbstractEntity) o;
 
         return x.getName() == this.getName();
     }

@@ -1,6 +1,6 @@
 import entities.*;
-import object.Baloon;
-import object.Bush;
+import objects.Baloon;
+import objects.Bush;
 
 public class Main {
     public static void main(String[] args){

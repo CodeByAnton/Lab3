@@ -1,5 +1,5 @@
 package entities;
 
 public interface Orderedable {
-     void order(Entity name, Item item);
+     void order(AbstractEntity name, Item item);
 }
